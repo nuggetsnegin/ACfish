@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+
+//if its just somethign thats passed in data we can just use a functional component (better perf too)
 const Header = ({ tagline }) => (
   <header className="top">
     <h1>
