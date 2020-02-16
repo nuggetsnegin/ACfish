@@ -4,6 +4,7 @@ import { render } from 'react-dom'; //only need 1 method, cherry pick a method f
 import StorePicker from './components/StorePicker';
 import App from './components/App';
 import './css/style.css';
+import Router from './components/Router';
 
 //only time where we do touch the DOM and thats when we mount it to the page
-render(<App />, document.querySelector('#main')); //need to give it an actual DOM element to mount too
+render(<Router />, document.querySelector('#main')); //need to give it an actual DOM element to mount too
