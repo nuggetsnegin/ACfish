@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { render } from 'react-dom'; 
 
 //every component we have will be its own class
 //needs atleast 1 method inside of it - rendder: what dom elements do I put on the page?
@@ -8,10 +7,11 @@ class StorePicker extends Component {
         return( //only ever return ONE element, you can put as many child elements inside a parent element, cannot return sibling elements
             //the solution to that - wrap them in a React.Fragment tag!
             <React.Fragment>
-                { /* no regular html comments have to use squigglies :'( */}
-                <p>fish</p>
+                { /* no regular html comments have to use squigglies :'(, you cannot return a comment and an adj element*/}
                 <form className="store-selector">
-                    <h1>Please enter a store</h1>
+                    <h2>Please enter a store</h2>
+                    <input type="text" required placeholder="Store Name"/>
+                    <button type="submit">Visit Store</button>
                 </form>
             </React.Fragment>
         )
