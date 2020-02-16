@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-const Header = ({ tagline, age }) => (
+const Header = ({ tagline }) => (
   <header className="top">
     <h1>
       Bob's{' '}
@@ -11,7 +11,7 @@ const Header = ({ tagline, age }) => (
       Fish
     </h1>
     <h3 className="tagline">
-      <span>{this.props.tagline}</span>{' '}
+      <span>{tagline}</span>{' '}
       {/*this is the component instance and .props the object inside the component*/}
     </h3>
   </header>
