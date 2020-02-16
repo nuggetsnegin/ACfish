@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
 
-class Header extends Component {
-  render() {
-    return (
-      <header className="top">
-        <h1>
-          Catch{' '}
-          <span className="ofThe">
-            <span className="of">of</span> <span className="the">the</span>
-          </span>{' '}
-          Day
-        </h1>
-        <h3 className="tagline">
-          <span>Fresh Daily</span>
-        </h3>
-      </header>
-    );
-  }
-}
+const Header = ({ tagline, age }) => (
+  <header className="top">
+    <h1>
+      Bob's{' '}
+      <span className="ofThe">
+        <span className="of">Animal</span>
+        <span className="the">Crossing</span>
+      </span>{' '}
+      Fish
+    </h1>
+    <h3 className="tagline">
+      <span>{this.props.tagline}</span>{' '}
+      {/*this is the component instance and .props the object inside the component*/}
+    </h3>
+  </header>
+);
+// class Header extends Component {
+// }
 
 export default Header;
