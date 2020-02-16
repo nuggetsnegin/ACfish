@@ -16,7 +16,5 @@ const Header = ({ tagline }) => (
     </h3>
   </header>
 );
-// class Header extends Component {
-// }
 
 export default Header;
