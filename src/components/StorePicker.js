@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { getFunName } from '../helpers';
 //every component we have will be its own class
 //needs atleast 1 method inside of it - rendder: what dom elements do I put on the page?
 class StorePicker extends Component {
@@ -11,7 +11,13 @@ class StorePicker extends Component {
         {/* no regular html comments have to use squigglies :'(, you cannot return a comment and an adj element*/}
         <form className="store-selector">
           <h2>Please enter a store</h2>
-          <input type="text" required placeholder="Store Name" />
+          {/*must used defaultValue="hello" cannot manually set to value because it must be from state*/}
+          <input
+            type="text"
+            required
+            placeholder="Store Name"
+            defaultValue={getFunName()}
+          />
           <button type="submit">Visit Store</button>
         </form>
       </React.Fragment>
