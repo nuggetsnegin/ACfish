@@ -7,7 +7,9 @@ class Inventory extends Component {
   render() {
     return (
       <div className="inventory">
-        <AddFishForm />
+        <h2>Pocket</h2>
+        <AddFishForm addFish={this.props.addFish} />
+        {/* <button onClick={}>Load Sample Fishies</button> */}
       </div>
     );
   }
