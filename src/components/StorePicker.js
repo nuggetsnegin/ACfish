@@ -3,20 +3,17 @@ import { getFunName } from '../helpers';
 //every component we have will be its own class
 //needs atleast 1 method inside of it - rendder: what dom elements do I put on the page?
 class StorePicker extends Component {
-  constructor() {
-    //runs before storePicker is created
-    super(); //must be created first before you can run anything in component
-    this.goToStore = this.goToStore.bind(this); //overwrites the method on it and then reference this as goToStor as storePicker instance
-  }
   myInput = React.createRef();
-  goToStore(event) {
+  //property known as goToStore - set is as an arrow function so we can bind 'this' to the store picker component
+  //if you need to access 'this' in a custom method you must use arrow syntax
+  goToStore = event => {
     //event object is full of information of what 'event' happened
     event.preventDefault(); //stop page from refresh/submitting
     //get text from input - without touching the DOM
     console.log(this); //now equal to instance of store picker
 
     //change the page to store/whatever the user enters
-  }
+  };
 
   render() {
     return (
