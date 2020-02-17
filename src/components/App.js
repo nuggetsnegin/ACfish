@@ -38,7 +38,9 @@ class App extends Component {
         <div className="menu">
           <Header tagline="Only the best pfffffppt" age={12} cool={true} />
           <ul className="fishes">
-            <Fish />
+            {Object.keys(this.state.fishes).map(key => (
+              <Fish key={key} details={this.state.fishes[key]} />
+            ))}
           </ul>
         </div>
         <Order />

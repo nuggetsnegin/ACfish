@@ -11,7 +11,7 @@ const fishes = {
 
   fish2: {
     name: 'Pale Chub',
-    image: '/images/palechub.png',
+    image: '/images/palechub.jpg',
     desc:
       'Oh? Is that a fact? It is sometimes called a mountain trout? But its not a trout! What rot! Well, regardless, I will see that it gets the proper care. You have my word on it',
     price: 160,
@@ -65,7 +65,7 @@ const fishes = {
 
   fish8: {
     name: 'Moray Eel',
-    image: '/images/moray.jpg',
+    image: '/images/moray.png',
     desc:
       'Moray eels can often be seen sticking just their heads out from between two rocks. When unsuspecting prey approaches, the dart out to snatch it up into their sharp-toothed mouths. Once moray eels have their teeth in you, it is hard to get away, making moray-eel bites no trifling matter. Their long, finless bodies are covered in tough, snakelike skin that often gets used as leather.',
     price: 2000,
