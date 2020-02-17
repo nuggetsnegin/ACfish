@@ -9,7 +9,15 @@ class AddFishForm extends Component {
 
   createFish = event => {
     event.preventDefault();
-    console.log('making a fish');
+    const fish = {
+      name: this.nameRef.current.value,
+      price: this.priceRef.current.value,
+      status: this.statusRef.current.value,
+      desc: this.descRef.current.value,
+      image: this.imageRef.current.value
+    };
+
+    console.log(fish);
   };
 
   render() {
@@ -22,7 +30,7 @@ class AddFishForm extends Component {
           type="text"
           placeholder="Bells"
         />
-        <select name="status">
+        <select name="status" ref={this.statusRef}>
           <option value="available">Fresh</option>
           <option value="unavailable">Sold Out!</option>
         </select>
