@@ -10,7 +10,10 @@ class Fish extends Component {
         <h3 className="fish-name">{name}</h3>
         <span className="price">{price}</span>
         <p>{desc}</p>
-        <button disabled={!isAvailable}>
+        <button
+          disabled={!isAvailable}
+          onClick={() => this.props.addToorder(this.props.index)}
+        >
           {isAvailable ? 'Sell to Reese' : 'None in pocket'}
         </button>
       </li>

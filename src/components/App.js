@@ -32,6 +32,14 @@ class App extends Component {
     });
   };
 
+  addToOrder = key => {
+    //take a copy of state
+    const order = { ...this.state.order };
+    //add to the order or update the number in our order
+    order[key] = order[key] + 1 || 1; //if order.fish1 exists increment it by 1 or add value of 1
+    this.setState({ order });
+  };
+
   render() {
     return (
       <div className="catch-of-the-day">
@@ -39,11 +47,16 @@ class App extends Component {
           <Header tagline="Only the best pfffffppt" age={12} cool={true} />
           <ul className="fishes">
             {Object.keys(this.state.fishes).map(key => (
-              <Fish key={key} details={this.state.fishes[key]} />
+              <Fish
+                key={key}
+                details={this.state.fishes[key]}
+                addToOrder={this.addToOrder}
+                index={key}
+              />
             ))}
           </ul>
         </div>
-        <Order />
+        <Order {...this.state} />
         <Inventory
           addFish={this.addFish}
           loadSampleFishes={this.loadSampleFishes}
