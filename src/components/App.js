@@ -11,7 +11,17 @@ class App extends Component {
   };
 
   addFish = fish => {
-    console.log('adding a fish');
+    //to update state:
+    //1 - first we need to get a copy of the existing state - never want to reach into state and modify it directly (mutation)
+    //will cause perf issues or updating out of order
+    const fishes = { ...this.state.fishes };
+    // 2 - add our new fish to the fishes obj
+    fishes[`fish${Date.now()}`] = fish; //returns the ms since 1970 as our unique value
+
+    //set the new fishes object to state
+    this.setState({
+      fishes: fishes
+    });
   };
 
   render() {
