@@ -22,7 +22,7 @@ const fishes = {
     name: 'Crucian Carp',
     image: '/images/crucian.jpg',
     desc:
-      'Even run-of-the-mill, common fish are valuable resources, you see. All part of the grand tapestry, wot! We will take excellent care of this fellow, oh yes. You can rest assured. Excellent care, indeed',
+      'Crucian carp are fairly easy fish for beginners to catch, but they are also popular with veteran anglers. They are related to koi and can live up to 15 years, making them a great fish to keep in a pond. Male offspring are seldom born, so females significantly outnumber males, making populations suffer. Luckily, females reproduce with males of some other species, so the problem is relatively temporary.',
     price: 120,
     status: 'unavailable'
   },
