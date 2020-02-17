@@ -4,7 +4,7 @@ const fishes = {
     name: 'Bitterling',
     image: '/images/bitterling.jpg',
     desc:
-      'Hoo! Indeed, WOO hoo! A bitterling, I believe. Even run-of-the-mill, common fish are valuable resources, you see. All part of the grand tapestry, wot! We will take excellent care of this fellow, oh yes. You can rest assured. Excellent care, indeed.',
+      'These fish are so small, they can fit their entire body in the palm of your hand. During mating season, the males belly turns a light orange in order to properly attract a mate. They live in rivers and lakes and deposit eggs in large bivalves where the eggs hatch and live for a while.',
     price: 900,
     status: 'available'
   },
@@ -13,7 +13,7 @@ const fishes = {
     name: 'Pale Chub',
     image: '/images/palechub.jpg',
     desc:
-      'Oh? Is that a fact? It is sometimes called a mountain trout? But its not a trout! What rot! Well, regardless, I will see that it gets the proper care. You have my word on it',
+      'These fish are related to carp, with distinguishing features such as long ventral fins and protruding mouths. They have good jumping abilities, which allow them to jump up and grab bugs hanging around the water. They are known as very active fish with rather scrappy attitudes, making them tenacious survivors. During mating season, the males stomach turns pink and its back turns blue. Females love this.',
     price: 160,
     status: 'available'
   },
