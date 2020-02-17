@@ -9,7 +9,9 @@ class Inventory extends Component {
       <div className="inventory">
         <h2>Pocket</h2>
         <AddFishForm addFish={this.props.addFish} />
-        {/* <button onClick={}>Load Sample Fishies</button> */}
+        <button onClick={this.props.loadSampleFishes}>
+          Load Sample Fishies
+        </button>
       </div>
     );
   }
