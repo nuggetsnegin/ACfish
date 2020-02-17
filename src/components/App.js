@@ -3,6 +3,7 @@ import Header from './Header';
 import Order from './Order';
 import Inventory from './Inventory';
 import sampleFishes from '../sample-fishes';
+import Fish from './Fish';
 
 class App extends Component {
   //setting state with a property
@@ -36,7 +37,9 @@ class App extends Component {
       <div className="catch-of-the-day">
         <div className="menu">
           <Header tagline="Only the best pfffffppt" age={12} cool={true} />
-          {/*have to use squigglies for numbers and booleans*/}
+          <ul className="fishes">
+            <Fish />
+          </ul>
         </div>
         <Order />
         <Inventory

@@ -236,7 +236,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  background: #d4d4d4;
+  background-image: url('./images/pattern.png');
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Open Sans', sans-serif;
@@ -279,24 +279,23 @@ header.top h1 .ofThe {
   display: -webkit-box;
   display: flex;
   font-size: 3rem;
-  color: #f5a623;
+  color: rgb(122, 57, 207);
   -webkit-box-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
   background: url('images/anchor.svg') center no-repeat;
-  background-size: cover;
-  padding: 0 1rem;
+  background-size: contain;
 }
 header.top h1 .ofThe .of {
-  padding-right: 2rem;
+  padding-right: 2.5rem;
   position: relative;
-  right: -0.5rem;
+  right: -1.5rem;
 }
 header.top h3 {
   margin: 0;
   font-size: 2rem;
-  color: #f5a623;
+  color: rgb(122, 57, 207);
   position: relative;
   display: inline-block;
 }
