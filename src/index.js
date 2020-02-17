@@ -1,8 +1,8 @@
 import React from 'react'; //behind the scenes goes into node modules folder
 //need a secondary package known as React DOM so we can render to the DOM:
 import { render } from 'react-dom'; //only need 1 method, cherry pick a method from the package we only need the Render method
-// import StorePicker from './components/StorePicker';
-// import App from './components/App';
+import StorePicker from './components/StorePicker';
+import App from './components/App';
 import './css/style.css';
 import Router from './components/Router';
 

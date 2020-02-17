@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { getFunName } from '../helpers';
+
 //every component we have will be its own class
 //needs atleast 1 method inside of it - rendder: what dom elements do I put on the page?
 class StorePicker extends Component {
@@ -10,9 +11,10 @@ class StorePicker extends Component {
     //event object is full of information of what 'event' happened
     event.preventDefault(); //stop page from refresh/submitting
     //get text from input - without touching the DOM
-    console.log(this); //now equal to instance of store picker
-
-    //change the page to store/whatever the user enters
+    const storeName = this.myInput.current.value; //.current is react (gets input) and next .value is javascript thing
+    //change the page to store/whatever the user enters - do not want to refresh just go using react router
+    //storePicker is a child of Router so we can access the props because Router is the parent!
+    this.props.history.push(`/store/${storeName}`);
   };
 
   render() {
@@ -25,8 +27,8 @@ class StorePicker extends Component {
         {/*must used defaultValue="hello" cannot manually set to value because it must be from state*/}
         <input
           type="text"
-          required
           ref={this.myInput}
+          required
           placeholder="Store Name"
           defaultValue={getFunName()}
         />
