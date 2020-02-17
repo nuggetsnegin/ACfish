@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ACfish/static/css/main.4ccaf625.chunk.css",
+    "main.js": "/ACfish/static/js/main.97af0d82.chunk.js",
+    "main.js.map": "/ACfish/static/js/main.97af0d82.chunk.js.map",
+    "runtime-main.js": "/ACfish/static/js/runtime-main.4c430fe7.js",
+    "runtime-main.js.map": "/ACfish/static/js/runtime-main.4c430fe7.js.map",
+    "static/js/2.230d4d2d.chunk.js": "/ACfish/static/js/2.230d4d2d.chunk.js",
+    "static/js/2.230d4d2d.chunk.js.map": "/ACfish/static/js/2.230d4d2d.chunk.js.map",
+    "index.html": "/ACfish/index.html",
+    "precache-manifest.4a56aabdcf98500681299366d6cce275.js": "/ACfish/precache-manifest.4a56aabdcf98500681299366d6cce275.js",
+    "service-worker.js": "/ACfish/service-worker.js",
+    "static/css/main.4ccaf625.chunk.css.map": "/ACfish/static/css/main.4ccaf625.chunk.css.map",
+    "static/js/2.230d4d2d.chunk.js.LICENSE": "/ACfish/static/js/2.230d4d2d.chunk.js.LICENSE",
+    "static/media/style.css": "/ACfish/static/media/pattern.90340305.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c430fe7.js",
+    "static/js/2.230d4d2d.chunk.js",
+    "static/css/main.4ccaf625.chunk.css",
+    "static/js/main.97af0d82.chunk.js"
+  ]
+}
