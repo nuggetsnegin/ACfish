@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Order from './Order';
 import Inventory from './Inventory';
+import sampleFishes from '../sample-fishes';
 
 class App extends Component {
   //setting state with a property
@@ -25,7 +26,9 @@ class App extends Component {
   };
 
   loadSampleFishes = () => {
-    alert('boop');
+    this.setState({
+      fishes: sampleFishes
+    });
   };
 
   render() {
