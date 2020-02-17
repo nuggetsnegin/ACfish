@@ -11,8 +11,8 @@ class App extends Component {
           <Header tagline="Only the best pfffffppt" age={12} cool={true} />{' '}
           {/*have to use squigglies for numbers and booleans*/}
         </div>
-        <Inventory />
         <Order />
+        <Inventory />
       </div>
     );
   }
