@@ -9,7 +9,7 @@ const Router = () => (
     <Switch>
       {/* tries the first route and uses fallbacks if not found*/}
       {/*what path - in this context its abs of / and renders out component storepicker*/}
-      <Route exact path="" component={StorePicker} />
+      <Route exact path="/" component={StorePicker} />
       {/*catch all for any store name*/}
       <Route path="/store/:storeId" component={App} />
       {/*catch all fallback*/}
