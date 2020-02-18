@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "39fb456af1a9385a996b39964c9d12f7",
+    "revision": "9964770e0b00518edd0368e5137f8027",
     "url": "/ACfish/index.html"
   },
   {
-    "revision": "dfa04d408bbc93b7db41",
+    "revision": "606b3a208ec5b9258d33",
     "url": "/ACfish/static/css/main.4ccaf625.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ACfish/static/js/2.230d4d2d.chunk.js.LICENSE"
   },
   {
-    "revision": "dfa04d408bbc93b7db41",
-    "url": "/ACfish/static/js/main.97af0d82.chunk.js"
+    "revision": "606b3a208ec5b9258d33",
+    "url": "/ACfish/static/js/main.7a83c678.chunk.js"
   },
   {
     "revision": "b993da6b3f3a0e0507aa",
